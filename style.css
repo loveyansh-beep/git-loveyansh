@@ -1,0 +1,137 @@
+ *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+             font-family:Silent Citadel Serif Font ,serif; 
+        }
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('myfont.ttf')format('truetype');
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+        body{
+            
+            background: linear-gradient(135deg,#5F615C,#41423F);
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            background: rgba(0, 0, 0, 0.05);
+            padding:40px;
+            border-radius:20px;
+            backdrop-filter: blur(10px);
+            box-shadow:0 20px 40px rgba(0,0,0,0.5);
+            animation:fadeIn 1s ease-in-out;
+        }
+
+        img{
+            width:160px;
+            height:160px;
+            border-radius:50%;
+            object-fit:cover;
+            border:4px solid #C6CA53;
+            margin-bottom:15px;
+        }
+
+        h1{
+        
+  background: linear-gradient(45deg, #C6CA53, #ffffff);
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+            font-family: "MyCustomFont", sans-serif;
+  font-size: 38px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+            margin-bottom:5px;
+        }
+
+        p{
+            font-size: 16px;
+  color: #e0e0e0;
+  font-weight: 300;
+            margin-bottom:20px;
+        }
+
+        h2{
+            font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+            margin:30px 0 15px;
+            color:#C6CA53;
+            position:relative;
+        }
+
+        h2::after{
+            content:'';
+            width:60px;
+            height:3px;
+            background:#C6CA53;
+            display:block;
+            margin:8px auto;
+        }
+
+        ul{
+            list-style:none;
+        }
+     
+        li{
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin:8px 0;
+        }
+
+        .social-icons{
+            margin-top:20px;
+        }
+
+        .social-icons a{
+            color:white;
+            margin:0 10px;
+            font-size:22px;
+            transition:0.3s;
+        }
+
+        .social-icons a:hover{
+            color:#C6CA53;
+            transform:scale(1.2);
+        }
+
+        footer{
+            margin-top:30px;
+            font-size:14px;
+            color:#aaa;
+        }
+
+        @keyframes fadeIn{
+            from{opacity:0; transform:translateY(20px);}
+            to{opacity:1; transform:translateY(0);}
+        }
+
+        @media(max-width:600px){
+            .container{
+                padding:20px;
+            }
+        }
+
+a{
+    color:#C6CA53;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+a:hover{
+    color:white;
+    text-decoration:underline;
+}
+.phone{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
